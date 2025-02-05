@@ -8,6 +8,23 @@
 
     <style>
 
+.responsive-text {
+        font-size: 35px; /* Tamanho padrão para telas grandes */
+        line-height: 1.8;
+    }
+
+    @media (max-width: 768px) { /* Para telas de dispositivos móveis */
+        .responsive-text {
+            font-size: 25px; /* Tamanho maior para telas pequenas */
+        }
+    }
+
+    @media (max-width: 480px) { /* Para telas menores */
+        .responsive-text {
+            font-size: 22px; /* Tamanho ajustado para telas ainda menores */
+        }
+    }
+
 .lab-btn {
     background: linear-gradient(45deg, #e7d99d, #f9c24d) !important; /* Gradiente dourado */
     color: #000000 !important; /* Cor do texto (preto) */
@@ -300,7 +317,7 @@
                                 <strong>R$29,90</strong>
                             </span>
                         </p><br>
-                        <p style="font-size: 30px; color: #ffffff; font-weight: normal; line-height: 1.5;">
+                        <p class="responsive-text" style="color: #ffffff; font-weight: normal;">
                             E tem mais! Os <strong style="color: #e7d99d;">primeiros 20 inscritos</strong> vão ganhar uma entrada 
                             <span style="color: #f9c24d;"><strong>GRÁTIS</strong></span> para um acompanhante.
                         </p>
