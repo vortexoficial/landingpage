@@ -3095,7 +3095,7 @@ ul li {
 .banner-section .banner-wrapper .banner-image {
   margin-bottom: -27%;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .banner-section .banner-wrapper .banner-image {
     margin-bottom: -16%;
   }
@@ -5351,4 +5351,323 @@ html {
   }
 }
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.image-part img {
+  animation: float 3s ease-in-out infinite;
+}
+
+.image-par img {
+  border-radius: 15px; /* Ajuste o valor conforme necessário para o arredondamento desejado */
+}
+.lab-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #e7d99d;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.lab-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 30%, rgba(231, 217, 157, 0.7) 50%, transparent 70%);
+  animation: shine 2s infinite linear;
+  z-index: 0; /* Gradiente abaixo do texto */
+}
+
+@keyframes shine {
+  from {
+      left: -100%;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+.lab-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #e7d99d;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(231, 217, 157, 0.8); /* Luz desfocada ao redor do botão */
+  transition: box-shadow 0.3s ease-in-out; /* Transição suave */
+}
+
+.lab-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 30%, rgba(231, 217, 157, 0.7) 50%, transparent 70%);
+  animation: shine 2s infinite linear;
+  z-index: 0; /* Gradiente abaixo do texto */
+}
+
+@keyframes shine {
+  from {
+      left: -100%;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+/* Efeito de foco quando o botão é hover */
+.lab-btn:hover {
+  box-shadow: 0 0 25px rgba(231, 217, 157, 1); /* Aumenta a luz ao passar o mouse */
+}
+
+/* Garante que a imagem fique ajustada e centralizada */
+.image-part img {
+  max-height: 100%;   /* Garante que a imagem não ultrapasse o limite da coluna */
+  width: auto;        /* Mantém a proporção da imagem */
+}
+
+/* Alinhamento vertical para a coluna da imagem */
+.d-flex.align-items-center {
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center;     /* Centraliza a imagem verticalmente */
+}
+
+/* Se necessário, ajuste o tamanho da imagem */
+.image-part {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Se necessário, pode adicionar alguma margem ou padding nas colunas */
+.row {
+  margin-bottom: 30px; /* Ajuste conforme necessário */
+}
+
+/* Centraliza o texto "Se você quer ser um líder..." */
+.centered-text {
+  text-align: center;
+  width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+}
+
+/* Carregar Font Awesome (se necessário) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Container para as setas */
+.double-arrow i {
+    font-size: 30px; /* Tamanho reduzido da seta */
+    color: #00102e; /* Azul escuro com pouca saturação */
+    animation: pulse-up 1s infinite; /* Animação de pulsação */
+}
+
+/* Animação pulsando para cima */
+@keyframes pulse-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Pulsação para baixo */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de hover para intensificar a animação ao passar o mouse */
+.double-arrow:hover i {
+    transform: translateY(-5px); /* Intensifica o efeito de pulsação ao passar o mouse */
+}
+
+.quem-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.icone-curso {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .item-curso {
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+@media (max-width: 768px) {.event-gift-section .gift-content .gift-list .gift-item {
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 7px 0;
+  font-family: "Circular Std", serif;
+  text-align: center;
+
+  .event-gift-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-part {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-content {
+    flex: 1;
+    padding-left: 15px;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .event-gift-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-part {
+        margin-top: 20px;
+    }
+
+    .gift-content {
+        padding-left: 0;
+    }
+}
+
+/* Adiciona a ordem correta para o desktop */
+@media (min-width: 768px) {
+    .col-lg-6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .order-lg-1 {
+        order: 1;
+    }
+
+    .order-lg-2 {
+        order: 2;
+    }
+}
+/* Alinhamento no desktop: título à esquerda ao lado da lista */
+@media (min-width: 992px) {
+    .event-gift-section .bottom-content {
+        text-align: left; /* Alinha o título à esquerda no desktop */
+    }
+
+    .event-gift-section .col-lg-6.col-12.order-lg-2.order-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o conteúdo ao lado do GIF */
+    }
+}
+
+/* Alinhamento no mobile: título centralizado */
+@media (max-width: 991px) {
+    .event-gift-section .bottom-content {
+        text-align: center; /* Centraliza o título no mobile */
+    }
+    
+    .event-gift-section .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo ao lado do GIF no mobile */
+    }
+}
+
+.font-grande {
+  font-weight: 900; /* Deixa a fonte super grossa */
+  font-size: 1.5em; /* Opcional: aumenta um pouco o tamanho da fonte */
+}
+
+.news-section {
+  background-color: #e7d99d;
+}
+
+/* Remover estilo de lista padrão */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Estilo para cada item da lista */
+li {
+  font-size: 22px; /* Tamanho da fonte da lista */
+  line-height: 2; /* Aumenta o espaçamento entre os itens */
+  display: flex;
+  align-items: center;
+  color: black; /* Cor preta para o texto */
+  margin-bottom: 15px; /* Espaçamento maior entre os itens */
+  border-bottom: 1px solid #ccc; /* Traço separando os itens */
+  padding-bottom: 10px; /* Espaço entre o texto e o traço */
+}
+
+/* Tamanho e cor do ícone */
+li i {
+  font-size: 28px; /* Tamanho do ícone */
+  color: white; /* Cor branca para o ícone de fogo */
+  margin-right: 15px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo para o ícone em dispositivos móveis (ícone acima do texto) */
+@media (max-width: 768px) {
+  li {
+    flex-direction: column; /* Coloca o ícone acima do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  li i {
+    margin-right: 0;
+    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+  }
+}
+
+/* Estilo para o corpo e fundo */
+body {
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.btn-contorno {
+  border: 2px solid black;
+}
 /*# sourceMappingURL=style.css.map */
+
+
