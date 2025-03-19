@@ -5671,3 +5671,6 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 
+html {
+  scroll-behavior: smooth;
+}
