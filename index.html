@@ -980,7 +980,18 @@
         left: 100%;
     }
 </style>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("a").forEach(button => {
+            if (button.getAttribute("href") === "#investimento") {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    document.getElementById("investimento").scrollIntoView({ behavior: "smooth" });
+                });
+            }
+        });
+    });
+    </script>
 
 </body>
 
