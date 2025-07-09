@@ -2,110 +2,104 @@
 <html lang="pt">
 
 <head>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <style>
-
-
-
-.responsive-text {
-        font-size: 35px; /* Tamanho padrão para telas grandes */
-        line-height: 1.8;
-    }
-
-    @media (max-width: 768px) { /* Para telas de dispositivos móveis */
-        .responsive-text {
-            font-size: 25px; /* Tamanho maior para telas pequenas */
-        }
-    }
-
-    @media (max-width: 480px) { /* Para telas menores */
-        .responsive-text {
-            font-size: 22px; /* Tamanho ajustado para telas ainda menores */
-        }
-    }
-
-.lab-btn {
-    background: linear-gradient(45deg, #e7d99d, #f9c24d) !important; /* Gradiente dourado */
-    color: #000000 !important; /* Cor do texto (preto) */
-    padding: 12px 30px !important;
-    border-radius: 10px !important; /* Borda suavemente arredondada */
-    font-weight: bold !important;
-    text-align: center !important;
-    display: inline-block !important;
-    text-decoration: none !important;
-    transition: background 0.3s ease, transform 0.3s ease !important;
-}
-
-.lab-btn:hover {
-    background: linear-gradient(45deg, #f9c24d, #e7d99d) !important; /* Inverte o gradiente no hover */
-    transform: translateY(-5px) !important; /* Efeito de elevação no hover */
-}
-        @media (max-width: 767px) {
-            .banner-content img {
-                margin-top: -110px; /* Ajuste o valor conforme necessário */
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="WORKSHOP GPS 2.O - A Inovação da Gestão" />
     <meta property="og:description" content="Workshop presencial que vai transformar a forma de liderar e gerir sua empresa." />
     <meta property="og:image" content="assets/images/logo/logo.png" />
     <meta property="og:url" content="URL-do-seu-site-ou-página" />
     <meta property="og:type" content="website" />
     <title>Formação Lider Especialista</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/01.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Ajuste para o tamanho da logo */
+        .banner-content img {
+            width: 65%; /* Aumento do tamanho da logo para 65% */
+            max-width: 65%;
+        }
+
+        /* Ajuste do título para mobile - Primeiras letras maiúsculas */
+        .banner-content h2 {
+            text-transform: capitalize; /* Primeiras letras de cada palavra em maiúsculas */
+        }
+
+        @media (max-width: 768px) {
+            /* Ajuste do título para mobile */
+            .banner-content h2 {
+                font-size: 35px; /* Aumenta o título para telas pequenas */
+            }
+
+            /* Ajuste do subtítulo para mobile */
+            .banner-content p {
+                font-size: 12px; /* Diminui ainda mais a fonte do subtítulo no mobile */
+                line-height: 1.5;
+            }
+        }
+
+        /* Estilo original do botão */
+        .lab-btn {
+            background: linear-gradient(45deg, #e7d99d, #f9c24d) !important; /* Gradiente dourado */
+            color: #000000 !important; /* Cor do texto (preto) */
+            padding: 12px 30px !important;
+            border-radius: 10px !important; /* Borda suavemente arredondada */
+            font-weight: bold !important;
+            text-align: center !important;
+            display: inline-block !important;
+            text-decoration: none !important;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .lab-btn:hover {
+            background: linear-gradient(45deg, #f9c24d, #e7d99d) !important; /* Inverte o gradiente no hover */
+            transform: translateY(-5px) !important; /* Efeito de elevação no hover */
+        }
+    </style>
 </head>
 
 <body>
     <div class="loader"></div>
 
-   
     <!-- ==========Banner Section start Here========== -->
     <section class="banner-section">
         <div class="container">
             <div class="banner-wrapper">
-               
-                    <div class="col-lg-6 col-12">
-                        <div class="banner-content">
-                            <img src="assets/images/logo/logo.png" width="65%"><br><br><br>
-                            <h2 class="mb-0"> 
-                                <font color="#ffffff">Transforme Seu Negócio com uma <font color="#e7d99d">Liderança de Impacto!</font></font>
-                            </h2>
-                           <br> <p ><font size="5"  style="font-weight: 100; line-height: 1.3;" >Liderar é mais do que comandar. É inspirar, transformar e conquistar resultados extraordinários! Se você é um líder que sente que seus processos não fluem, que os resultados não refletem seu esforço, ou que falta clareza na gestão do seu negócio, é hora de dar o próximo passo. O mercado exige líderes que saibam onde querem chegar e como trilhar o caminho com confiança.</p>
+                <div class="col-lg-6 col-12">
+                    <div class="banner-content">
+                        <img src="assets/images/logo/logo.png" alt="Logo"><br><br><br>
+                        <h2 class="mb-0"> 
+                            <font color="#ffffff">Transforme Seu Negócio com uma <font color="#e7d99d">Liderança de Impacto!</font></font>
+                        </h2>
+                        <br>
+                        <p><font size="5" style="font-weight: 100; line-height: 1.3;">
+                            Liderar é mais do que comandar.<br>É inspirar, transformar e conquistar resultados extraordinários! 
+                            <br>Se você é um líder que sente que seus processos não fluem, que os resultados não refletem seu esforço, 
+                            ou que falta clareza na gestão do seu negócio, é hora de dar o próximo passo. O mercado exige líderes que saibam 
+                            onde querem chegar e como trilhar o caminho com confiança.</font>
+                        </p>
 
-
-           
-      
-                           
-                            <a href="#investimento" class="lab-btn mt-3 scroll-button"><span> 
-                                <font color="#000000"><b>EU QUERO ME FORMAR</b></font></span> </a>
-                        </div>
+                        <a href="#investimento" class="lab-btn mt-3 scroll-button"><span> 
+                            <font color="#000000"><b>EU QUERO ME FORMAR</b></font></span> 
+                        </a>
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="banner-image">
-                            <img src="assets/images/banner/01.png"  alt="banner-img">
-                        </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="banner-image">
+                        <img src="assets/images/banner/01.png" alt="banner-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ==========Banner Section end Here========== -->
-
 
     <!-- ==========About Section start Here========== -->
     <section class="about-section padding-tb padding-b shape-img">
@@ -114,21 +108,17 @@
                 
                 <div class="col-lg-10">
                     <div class="minha-div text-center">  <div class="double-arrow">
-                        
                         <i class="fas fa-chevron-down"></i>
                     </div>
                        <h2><b>Apresentamos a <font color="cab660">Formação Líder Especialista</font></b></h2><br>
-                         
                     </div>
                     <div class="section-wrapper text-center">
-                        <h5 style="font-weight: 400;"><font color="#757575">O curso foi desenvolvido para líderes e empresários que desejam dominar a gestão de pessoas, processos e resultados. Prepare-se para estruturar sua liderança e conquistar o sucesso de maneira eficaz e alinhada com a cultura que você quer construir!</font></h5>
-                    
+                        <h6 style="font-weight: 400;"><font color="#757575">O curso foi desenvolvido para líderes e empresários que desejam dominar a gestão de pessoas, processos e resultados. Prepare-se para estruturar sua liderança e conquistar o sucesso de maneira eficaz e alinhada com a cultura que você quer construir!</font></h6>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
 
     <!-- ===== Event Gift start here  ==== -->
     <section class="event-gift-section padding-tb padding-b bg-image">
@@ -191,10 +181,7 @@
             </div>
         </div>
     </section>
-    
-    
-    <!-- ===== Event Gift end here  ==== -->
-
+   
     <!-- ===== News Section Start here  ==== -->
     <section class="news-section padding-tb padding-b shape-img">
         <div class="container">
@@ -243,45 +230,42 @@
                     </div>
                 </div>
     
-                <div class="bottom-content d-flex flex-column align-items-center col-lg-6 col-12 order-lg-2 order-1">
-                   
-                    
-                    <div class="section-wrapper">
-                        <div class="gift-content">
-                            <ul class="gift-list">
-                                 
-                                <li class="gift-item font-grande">
-                                    <span><font size="9" color="#e7d99d" style="line-height: 1;"><b>O QUE VAMOS SOLUCIONAR</b></font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Desempenho abaixo do esperado:</b></font><br>Sua equipe não entrega o que poderia?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Dificuldade em bater metas:</b></font><br>Resultados frustrantes e crescente pressão?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Falta de processos claros:</b></font><br>Confusão e caos, sem estrutura definida?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Desgaste na liderança:</b></font><br>Você carrega tudo sozinho, mas não vê evolução?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Erros nas contratações:</b></font><br>Dificuldade em encontrar e manter os profissionais certos?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Equipe desmotivada:</b></font><br>Falta de engajamento e comprometimento?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><font size="5" color="#e7d99d"><b>Tarefas desorganizadas:</b></font><br>Retrabalho constante e processos ineficazes?</font>
-                                </li>
-                                <li class="gift-item fonte-fina">
-                                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><font size="5" color="#e7d99d"><b>Desalinhamento com a cultura e objetivos:</b></font><br>Dificuldade em conectar sua equipe com os valores da empresa?</font>
-                                </li>
-                            </ul><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
+               <div class="bottom-content d-flex flex-column align-items-center col-lg-6 col-12 order-lg-2 order-1">
+    <div class="section-wrapper">
+        <div class="gift-content">
+            <ul class="gift-list">
+                <li class="gift-item font-grande">
+                    <span><font size="9" color="#e7d99d" style="line-height: 1;"><b>O QUE VAMOS SOLUCIONAR</b></font>
+                </li>
+                <li class="gift-item font-li">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Desempenho abaixo do esperado:</b></font><br><span class="fonte-fina">Sua equipe não entrega o que poderia?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Dificuldade em bater metas:</b></font><br><span class="fonte-fina">Resultados frustrantes e crescente pressão?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Falta de processos claros:</b></font><br><span class="fonte-fina">Confusão e caos, sem estrutura definida?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Desgaste na liderança:</b></font><br><span class="fonte-fina">Você carrega tudo sozinho, mas não vê evolução?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Erros nas contratações:</b></font><br><span class="fonte-fina">Dificuldade em encontrar e manter os profissionais certos?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><b><font size="5" color="#e7d99d">Equipe desmotivada:</b></font><br><span class="fonte-fina">Falta de engajamento e comprometimento?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><font size="5" color="#e7d99d"><b>Tarefas desorganizadas:</b></font><br><span class="fonte-fina">Retrabalho constante e processos ineficazes?</span></font>
+                </li>
+                <li class="gift-item fonte-fina">
+                    <span><font size="5"><font color="#e2d89f"><i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i></font></span><font size="5" color="#e7d99d"><b>Desalinhamento com a cultura e objetivos:</b></font><br><span class="fonte-fina">Dificuldade em conectar sua equipe com os valores da empresa?</span></font>
+                </li>
+            </ul><br>
+        </div>
+    </div>
+</div>
+
         </div> <div class="bottom-content d-flex flex-column align-items-center ">
                    
         <a href="#investimento" class="lab-btn mt-3 scroll-button"><span> 
